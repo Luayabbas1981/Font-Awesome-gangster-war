@@ -13,6 +13,7 @@ body {
     font-style: italic;
     color: rgb(1, 1, 30);
     animation: head1 3s forwards;
+    user-select: none;
   }
   @keyframes head1 {
     to {
@@ -161,6 +162,7 @@ body {
    margin-left: 180px;
     opacity: 0;
     animation: appear 1s 38s forwards;
+    user-select: none;
   }
   @keyframes end {
     to {
