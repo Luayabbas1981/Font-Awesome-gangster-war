@@ -45,10 +45,11 @@ body {
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: rgb(245, 245, 16);
+    background-color: rgb(251, 251, 121);
     opacity: 0;
-    animation: appear 2s 9s forwards, end 2s 36s forwards;
-  }
+    animation: appear 2s 9s forwards, end 2s 35.5s forwards;
+    -webkit-animation: appear 2s 9s forwards, end 2s 35.2s forwards;
+}
   .light {
     position: relative;
     opacity: 0;
@@ -97,13 +98,15 @@ body {
     position: relative;
     display: flex;
     column-gap: 2rem;
-    color: rgb(180, 176, 176);
+    color: rgb(121, 117, 117);
     font-size: 90px;
     top: -110px;
   }
   .chat1,
-  .chat2 {
+  .chat2,.chat3 {
     position: relative;
+    
+   
   }
   .chat1 {
     animation: appear 4s 16s;
@@ -120,7 +123,7 @@ body {
     position: absolute;
     content: "	👊	";
     font-size: 35px;
-    left: 18px;
+    left: 30%;
     top: 30px;
     animation: appear 4s 16s ;
   }
@@ -128,13 +131,11 @@ body {
     position: absolute;
     content: "💣	";
     font-size: 35px;
-    left: 18px;
-    top: 36px;
+    left: 30%;
+    top: 25px;
     animation: appear 4s 21s;
   }
   .chat3 {
-    position: relative;
-    color: rgb(180, 176, 176);
     font-size: 90px;
     top: -110px;
     left: -50px;
@@ -145,8 +146,8 @@ body {
     position: absolute;
     content: "💣	";
     font-size: 35px;
-    left: 18px;
-    top: 36px;
+    left: 30%;
+    top: 25px;
     opacity: 0;
     animation: appear 4s 26s;
   }
@@ -155,17 +156,46 @@ body {
       opacity: 1;
     }
   }
-  .end {
-    color: rgb(213, 213, 208);
-    font-size: 40px;
-    font-style: italic;
-   margin-left: 180px;
-    opacity: 0;
-    animation: appear 1s 38s forwards;
-    user-select: none;
-  }
   @keyframes end {
     to {
       opacity: 0;
     }
   }
+  .text {
+    position: absolute;
+    left: 120px;
+    width: 400px;
+    height: 60px;
+  }
+
+  .end {
+    position: relative;
+    top: 20px;
+    display: flex; 
+    color: rgb(213, 213, 208);
+    font-size: 40px;
+    font-style: italic;
+    opacity: 0;
+    animation: appear 1s 38s forwards;
+    user-select: none;
+  }
+  .end>div {
+    position: absolute;
+  }
+  .cover {
+    width: 350px;
+    height: 80px;
+    background-color:rgb(1, 1, 30) ;
+    animation: end1 2s 38s forwards;
+    -webkit-animation: end1 4s 38s forwards;
+}
+@keyframes end1 {
+  to {
+    transform: translate(350px);
+    -webkit-transform: translate(350px);
+    -moz-transform: translate(350px);
+    -ms-transform: translate(350px);
+    -o-transform: translate(350px);
+}
+}
+ 
