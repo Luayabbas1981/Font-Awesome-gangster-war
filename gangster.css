@@ -98,7 +98,7 @@ body {
     position: relative;
     display: flex;
     column-gap: 2rem;
-    color: rgb(121, 117, 117);
+    color: rgb(188, 184, 184);
     font-size: 90px;
     top: -110px;
   }
@@ -124,7 +124,7 @@ body {
     content: "	👊	";
     font-size: 35px;
     left: 30%;
-    top: 30px;
+    top: 30%;
     animation: appear 4s 16s ;
   }
   .chat2::after {
@@ -132,7 +132,7 @@ body {
     content: "💣	";
     font-size: 35px;
     left: 30%;
-    top: 25px;
+    top: 30%;
     animation: appear 4s 21s;
   }
   .chat3 {
@@ -147,7 +147,7 @@ body {
     content: "💣	";
     font-size: 35px;
     left: 30%;
-    top: 25px;
+    top: 30%;
     opacity: 0;
     animation: appear 4s 26s;
   }
