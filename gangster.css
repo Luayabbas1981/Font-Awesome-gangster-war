@@ -172,14 +172,15 @@ body {
   .end {
     position: relative;
     top: 20px;
-    display: flex; 
+    display: flex;
     color: rgb(213, 213, 208);
     font-size: 40px;
     font-style: italic;
     opacity: 0;
-    animation: appear 1s 38s forwards;
+    animation: appear 1s 37s forwards;
     user-select: none;
-  }
+    -webkit-animation: appear 0.1s 37s forwards;
+}
   .end>div {
     position: absolute;
   }
@@ -187,8 +188,8 @@ body {
     width: 350px;
     height: 80px;
     background-color:rgb(1, 1, 30) ;
-    animation: end1 2s 38s forwards;
-    -webkit-animation: end1 4s 38s forwards;
+    animation: end1 4s 37s forwards;
+    -webkit-animation: end1 4s 37s forwards;
 }
 @keyframes end1 {
   to {
