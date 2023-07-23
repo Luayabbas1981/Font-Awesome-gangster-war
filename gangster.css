@@ -5,15 +5,26 @@ body {
     
   }
 
-  h1 {
+  h2 {
     margin: auto;
     margin-top: 12%;
-    width: 400px;
     text-align: center;
     font-style: italic;
     color: rgb(1, 1, 30);
     animation: head1 3s forwards;
     user-select: none;
+  }
+  @media(max-width:767px){
+    h2{
+      font-size: 0.8rem;
+      margin-top: 5rem;
+    }
+    .frame{
+      position: absolute;
+      left: -27%;
+      top: 15%;
+      scale: 0.6;
+    }
   }
   @keyframes head1 {
     to {
