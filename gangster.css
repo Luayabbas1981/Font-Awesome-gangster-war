@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 50vh;
     animation: room 4s 5s forwards;
-    
+    overflow: hidden;
   }
 
   h2 {
